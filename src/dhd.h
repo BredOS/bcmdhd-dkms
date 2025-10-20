@@ -526,7 +526,7 @@ enum dhd_op_flags {
 
 #ifndef CONFIG_BCMDHD_FW_PATH
 #ifdef OEM_ANDROID
-#define CONFIG_BCMDHD_FW_PATH  "/system/vendor/etc/wifi/fw_bcmdhd.bin"
+#define CONFIG_BCMDHD_FW_PATH  "/usr/lib/firmware/ap6275p/fw_bcmdhd.bin"
 #else
 #define CONFIG_BCMDHD_FW_PATH  "/var/run/rtecdc.bin"
 #endif /* OEM_ANDROID */
@@ -534,7 +534,7 @@ enum dhd_op_flags {
 
 #ifndef CONFIG_BCMDHD_NVRAM_PATH
 #ifdef OEM_ANDROID
-#define CONFIG_BCMDHD_NVRAM_PATH  "/system/vendor/etc/wifi/bcmdhd.cal"
+#define CONFIG_BCMDHD_NVRAM_PATH  "/usr/lib/firmware/ap6275p/bcmdhd.cal"
 #else
 #define CONFIG_BCMDHD_NVRAM_PATH  "/var/run/nvram.txt"
 #endif /* OEM_ANDROID */
@@ -561,7 +561,7 @@ enum dhd_op_flags {
 #else
 #ifndef CONFIG_BCMDHD_CONFIG_SAR_PATH
 #ifdef OEM_ANDROID
-#define CONFIG_BCMDHD_CONFIG_SAR_PATH  "/system/vendor/etc/wifi/sar_config.ini"
+#define CONFIG_BCMDHD_CONFIG_SAR_PATH  "/usr/lib/firmware/ap6275p/sar_config.ini"
 #else /* OEM_ANDROID */
 #define CONFIG_BCMDHD_CONFIG_SAR_PATH  "/var/run/sar_config.ini"
 #endif /* OEM_ANDROID */
@@ -569,7 +569,7 @@ enum dhd_op_flags {
 
 #ifndef CONFIG_BCMDHD_CONFIG_PATH
 #ifdef OEM_ANDROID
-#define CONFIG_BCMDHD_CONFIG_PATH  "/system/vendor/etc/wifi/wlan_config.ini"
+#define CONFIG_BCMDHD_CONFIG_PATH  "/usr/lib/firmware/ap6275p/wlan_config.ini"
 #else /* OEM_ANDROID */
 #define CONFIG_BCMDHD_CONFIG_PATH  "/var/run/wlan_config.ini"
 #endif /* OEM_ANDROID */
